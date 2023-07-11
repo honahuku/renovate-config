@@ -1,0 +1,32 @@
+{
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "labels": [
+        "dependencies"
+    ],
+    "dockerfile": {
+        "fileMatch": [
+            "(^|/)Dockerfile-[^/]*$"
+        ]
+    },
+    "lockFileMaintenance": {
+        "enabled": true,
+        "extends": [
+            "schedule:weekly"
+        ]
+    },
+    "dependencyDashboard": true,
+    "internalChecksFilter": "none",
+    "extends": [
+        "config:base",
+        ":timezone(Asia/Tokyo)",
+        "github>aquaproj/aqua-renovate-config#1.6.0",
+        ":disableRateLimiting",
+        ":enableVulnerabilityAlertsWithLabel(security)",
+        "github>honahuku/renovate-config:schedule",
+        "github>honahuku/renovate-config:labelMajor",
+        "github>honahuku/renovate-config:automerge",
+        "github>honahuku/renovate-config:groupLinters",
+        "github>honahuku/renovate-config:groupJest",
+        "github>honahuku/renovate-config:groupReact"
+    ]
+}

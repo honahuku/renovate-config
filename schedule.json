@@ -1,0 +1,9 @@
+{
+    "extends": [
+        ":timezone(Asia/Tokyo)"
+    ],
+    "schedule": [
+        "after 8am on monday",
+        "before 10am on monday"
+    ]
+}
