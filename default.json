@@ -14,7 +14,7 @@
             "schedule:weekly"
         ]
     },
-    "dependencyDashboard": true,
+    "dependencyDashboard": false,
     "internalChecksFilter": "none",
     "extends": [
         "config:base",
