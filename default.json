@@ -25,5 +25,20 @@
         "github>honahuku/renovate-config:schedule",
         "github>honahuku/renovate-config:labelMajor",
         "github>honahuku/renovate-config:automerge"
+    ],
+    "packageRules": [
+        {
+            "groupName": "Terraform",
+            "matchManagers": [
+                "regex"
+            ]
+        },
+        {
+            "groupName": "Terraform",
+            "matchManagers": [
+                "terraform"
+            ],
+            "matchDepTypes": ["required_version"]
+        }
     ]
 }
