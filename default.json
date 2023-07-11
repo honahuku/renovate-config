@@ -24,9 +24,6 @@
         ":enableVulnerabilityAlertsWithLabel(security)",
         "github>honahuku/renovate-config:schedule",
         "github>honahuku/renovate-config:labelMajor",
-        "github>honahuku/renovate-config:automerge",
-        "github>honahuku/renovate-config:groupLinters",
-        "github>honahuku/renovate-config:groupJest",
-        "github>honahuku/renovate-config:groupReact"
+        "github>honahuku/renovate-config:automerge"
     ]
 }
